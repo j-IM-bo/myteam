@@ -38,37 +38,60 @@
         <meta name="theme-color" content="#ffffff" />
     </head>
 
-    <body class="js-body stop-scrolling">
-        <header class="header js-header">
+    <body class="js-body">
+        <header class="header js-header content-wrapper">
             <div class="header__inner">
-                <a href="/" class="header__site-link">
-                    <img src="" alt="Logo" class="header__site-logo" />
+                <a href="./index.html" class="header__site-link">
+                    <img
+                        src="./images/logo.svg"
+                        aria-label="logo"
+                        alt="Logo"
+                        class="header__site-logo"
+                    />
                     <span class="visually-hidden">logo</span>
                 </a>
-                <nav class="header__site-nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-list-item">
-                            <a href="#" class="header__nav-link">About</a>
-                        </li>
-                    </ul>
+                <nav class="header__site-nav hidden-mobile">
+                    <div class="header__site-nav-inner">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-list-item">
+                                <a href="./index.html" class="header__nav-link"
+                                    >home</a
+                                >
+                                <a href="#" class="header__nav-link">about</a>
+                            </li>
+                        </ul>
+                        <a href=""
+                            ><button class="btn-p-l">contact us</button></a
+                        >
+                    </div>
                 </nav>
             </div>
             <!-- menu button object -->
-            <button class="menu-button js-menu-btn">
-                <span class="x"></span>
-                <span class="y"></span>
-                <span class="z"></span>
-                <span class="visually-hidden">Menu</span>
-            </button>
+            <div class="hidden-t-d">
+                <button aria-label="menu" class="menu-button js-menu-btn">
+                    <span class="x"></span>
+                    <span class="y"></span>
+                    <span class="z"></span>
+                    <span class="visually-hidden">Menu</span>
+                </button>
+            </div>
+
             <!-- menu component -->
-            <div class="menu js-menu">
+            <div class="menu__overlay"></div>
+            <div class="menu js-menu hidden-t-d">
                 <nav class="menu__nav">
                     <ul class="menu__list">
                         <li class="menu__list-item js-menu-item">
-                            <a href="#" class="menu__link">About</a>
+                            <a href="./index.html" class="menu__link">home</a>
+                            <a href="#" class="menu__link">about</a>
                         </li>
                     </ul>
+                    <a href=""><button class="btn-p-l">contact us</button></a>
                 </nav>
+                <img
+                    src="./images/bg-pattern-about-1-mobile-nav-1.svg"
+                    alt="background pattern"
+                />
             </div>
             <!-- /end .menu-->
         </header>

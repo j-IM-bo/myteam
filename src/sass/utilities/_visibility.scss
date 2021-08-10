@@ -12,3 +12,23 @@
     padding: 0;
     border: 0;
 }
+
+/*------------------------------------*\
+	Hidden on mobile 
+\*------------------------------------*/
+
+.hidden-mobile {
+    display: none;
+
+    @include bp(small) {
+        display: block;
+    }
+}
+
+.hidden-t-d {
+    display: block;
+
+    @include bp(small) {
+        display: none;
+    }
+}

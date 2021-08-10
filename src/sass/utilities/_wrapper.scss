@@ -3,15 +3,19 @@
 \*------------------------------------*/
 
 .site-wrapper {
-    // max-width: 108rem;
-    // margin: 0 auto;
+    max-width: 111rem;
+    margin: 0 auto;
 }
 
 .content-wrapper {
     position: relative;
-    max-width: 108rem;
+    max-width: 111rem;
     margin: 0 auto;
     padding: var(--col-pd-wrapper);
+
+    @include bp(small) {
+        padding: var(--col-pd-wrapper-small);
+    }
 }
 
 .content-inner {

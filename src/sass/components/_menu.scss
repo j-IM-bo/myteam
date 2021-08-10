@@ -1,0 +1,75 @@
+/*------------------------------------*\
+    Mobile menu
+\*------------------------------------*/
+
+.menu__overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background: var(--c-bg-dark-d-g);
+    @include z-index(level5);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+
+    &.is-active {
+        opacity: 0.9;
+        visibility: visible;
+    }
+
+    @include bp(small) {
+        display: none;
+    }
+}
+
+.menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--c-bg-dark-p-b);
+    width: 68%;
+    height: 100vh;
+    @include z-index(level5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+
+    img {
+        position: absolute;
+        bottom: 0;
+        right: -10rem;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    &.is-active {
+        transform: translateX(0);
+    }
+
+    @include bp(small) {
+        display: none;
+    }
+}
+
+.menu__nav {
+    margin-top: 12rem;
+    opacity: 0;
+}
+
+.menu__list {
+}
+
+.menu__list-item {
+}
+
+.menu__link {
+    margin-bottom: 3.6rem;
+    font-size: 1.8rem;
+}

@@ -15,25 +15,46 @@
     pointer-events: none;
     overflow: hidden;
 
-    @include bp(medium-up) {
+    @include bp(medium) {
         width: 108rem;
         left: 50%;
         transform: translateX(-50%);
     }
 }
 
-    .grid__inner {
-        float: left;
-        padding: 0 0.5rem;
-        width: 8.333%;
-        height: 2000px;
+.grid__inner {
+    float: left;
+    padding: 0 0.5rem;
+    width: 8.333%;
+    height: 2000px;
 
-        &::before {
-            display: block;
-            content: "";
-            width: 100%;
-            height: 100vh;
-            background: rgba(0, 214, 255, 0.4);
-            opacity: 0.5;
-        }
+    &::before {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 0, 0, 0.4);
+        opacity: 0.5;
     }
+}
+
+@media (max-width: 900px) {
+    .grid {
+        padding: 0 10px;
+    }
+
+    .gridInner {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        padding: 0 10px;
+    }
+
+    .gridInner {
+        width: 16.667%;
+        padding: 0 10px;
+    }
+}
