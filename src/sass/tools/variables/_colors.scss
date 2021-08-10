@@ -1,0 +1,56 @@
+/*------------------------------------*\
+    Semantic color variables
+    https://anotheruiguy.gitbooks.io/sassintherealworld_book-i/content/handy-tools/setting-variables.html
+\*------------------------------------*/
+:root {
+    //colors & brand
+    --black: #000000;
+    --white: #ffffff;
+    --light-grey: #f2eee4;
+
+    --midnight-green: #014e56;
+    --light-coral: #f67e7e;
+
+    --rapture-blue: #79c8c7;
+    --police-blue: #2c6269;
+    --deep-jungle-green: #004047;
+    --sacramento-s-g: #012f34;
+    --dark-green: #002529;
+
+    /*------------------------------------*\
+    Semantics
+    \*------------------------------------*/
+
+    //utilities
+    --c-lightest: var(--white);
+    --c-darkest: var(--black);
+    --c-placeholder: var(--light-grey);
+
+    //use pallet
+    --c-primary1: var(--midnight-green);
+    --c-primary2: var(--light-coral);
+
+    --c-secondary1: var(--rapture-blue);
+    --c-secondary2: var(--police-blue);
+    --c-secondary3: var(--deep-jungle-green);
+    --c-secondary4: var(--sacramento-s-g);
+    --c-secondary5: var(--dark-green);
+
+    //typography
+    //on dark backgrounds
+    --c-font-light: var(--white);
+    --c-font-coral: var(--light-coral);
+    --c-font-r-b: var(--rapture-blue);
+    --c-font-s-s-g: var(--sacramento-s-g);
+
+    //on light backgrounds
+
+    //backgrounds
+    --c-bg-dark-m-g: var(--midnight-green);
+    --c-bg-dark-s-s-g: var(--sacramento-s-g);
+    --c-bg-dark-coral: var(--light-coral);
+    --c-bg-dark-d-j-g: var(--deep-jungle-green);
+    --c-bg-dark-d-g: var(--dark-green);
+    --c-bg-dark-r-b: var(--rapture-blue);
+    --c-bg-dark-lightest: var(--white);
+}

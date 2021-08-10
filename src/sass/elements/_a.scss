@@ -1,0 +1,15 @@
+/*------------------------------------*\
+   Links
+\*------------------------------------*/
+
+a {
+    display: block;
+    text-decoration: none;
+    color: var(--c-primary2);
+    cursor: pointer;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
