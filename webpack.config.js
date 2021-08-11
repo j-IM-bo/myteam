@@ -59,6 +59,16 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/index.html",
             inject: "body"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/about.html",
+            inject: "body",
+            filename: "about.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/contact.html",
+            inject: "body",
+            filename: "contact.html"
         })
     ],
     devtool: "source-map",
