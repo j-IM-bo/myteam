@@ -15,7 +15,7 @@
     visibility: hidden;
     transition: var(--transition);
 
-    &.is-active {
+    &.menu-is-active {
         opacity: 0.9;
         visibility: visible;
     }
@@ -49,7 +49,7 @@
         height: 20rem;
     }
 
-    &.is-active {
+    &.menu-is-active {
         transform: translateX(0);
     }
 
@@ -61,6 +61,11 @@
 .menu__nav {
     margin-top: 12rem;
     opacity: 0;
+    transition: all 1s ease-in-out;
+
+    &.menu-is-active {
+        opacity: 1;
+    }
 }
 
 .menu__list {
