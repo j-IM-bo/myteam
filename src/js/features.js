@@ -11,5 +11,5 @@ export function initFeatures() {
             start: "top center"
         }
     });
-    tl.from(feature, { autoAlpha: 0, y: 10, stagger: 0.3 });
+    tl.from(feature, { duration: 1, autoAlpha: 0, y: 10, stagger: 0.2 });
 }
