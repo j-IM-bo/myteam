@@ -1,0 +1,122 @@
+/*------------------------------------*\
+    Footer 
+\*------------------------------------*/
+
+.footer {
+    width: 100%;
+    background: var(--c-bg-dark-d-g);
+}
+
+.footer__inner {
+    text-align: center;
+    padding: 6.6rem 0;
+
+    @include bp(small) {
+        display: grid;
+        grid-template:
+            [row1-start] "logo address" [row1-end]
+            [row1-start] "links address" [row1-end]
+            [row1-start] "socials copywrite" [row1-end]
+            / 50% 50%;
+        text-align: left;
+        padding: 6.6rem 4rem;
+    }
+
+    @include bp(medium) {
+        display: grid;
+        grid-template:
+            [row1-start] "logo address address socials" [row1-end]
+            [row1-start] "links address address copywrite" [row1-end];
+
+        padding: 4.8rem 0 0;
+    }
+}
+
+.footer__site-link {
+    width: 9.6rem;
+    margin: 0 auto 3rem;
+
+    @include bp(small) {
+        grid-area: logo;
+        margin: 0;
+    }
+    @include bp(small) {
+        width: 16rem;
+    }
+}
+
+.footer__nav {
+    margin: 0 auto 3rem;
+
+    @include bp(small) {
+        grid-area: links;
+        margin: 0;
+    }
+}
+.footer__nav-list {
+}
+.footer__nav-list-item {
+    display: flex;
+    justify-content: center;
+
+    @include bp(small) {
+        justify-content: flex-start;
+    }
+}
+.footer__nav-link {
+    margin: auto 2rem;
+    transition: var(--transition);
+
+    &:hover {
+        color: var(--c-font-coral);
+    }
+
+    @include bp(small) {
+        margin: 0 2rem 0 0;
+    }
+}
+
+.footer__add {
+    opacity: 0.6;
+    margin-bottom: 4.5rem;
+
+    @include bp(small) {
+        grid-area: address;
+        text-align: right;
+    }
+    @include bp(small) {
+        text-align: left;
+    }
+}
+
+.footer__socials {
+    svg {
+        margin: 0 1rem 2.3rem;
+        &:hover {
+            path {
+                transition: var(--transition);
+                fill: var(--c-bg-dark-coral);
+            }
+        }
+    }
+
+    @include bp(small) {
+        grid-area: socials;
+
+        svg {
+            margin: 0 1rem 0 0;
+        }
+    }
+    @include bp(medium) {
+        text-align: right;
+    }
+}
+
+.footer__copywrite {
+    opacity: 0.6;
+
+    @include bp(small) {
+        grid-area: copywrite;
+        text-align: right;
+    }
+}

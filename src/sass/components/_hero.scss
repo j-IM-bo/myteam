@@ -70,6 +70,10 @@
 .hero__title-mask {
     overflow: hidden;
     margin-bottom: 0.5rem;
+
+    div {
+        transform: translateY(100%);
+    }
 }
 // .hero__title-mask:nth-child(1) div,
 // .hero__title-mask:nth-child(2) div {

@@ -65,7 +65,9 @@
         transition: var(--transition);
     }
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
         &::after {
             transform: translateX(0);
         }
