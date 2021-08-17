@@ -12,5 +12,5 @@ export function initHero() {
         y: 0,
         stagger: 0.1
     });
-    gsap.to(copy, { duration: 1.2, autoAlpha: 1 }, "-=0.5");
+    // gsap.to(copy, { duration: 1.2, autoAlpha: 1 }, "-=0.5");
 }

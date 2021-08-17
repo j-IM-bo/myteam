@@ -2,6 +2,10 @@
     Font sizes
 \*------------------------------------*/
 
+:root {
+    --f-h1-sm: 6.4rem;
+}
+
 //extra large
 @mixin f-xl() {
     font-size: 4rem;

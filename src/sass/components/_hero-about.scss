@@ -1,0 +1,71 @@
+/*------------------------------------*\
+    About - hero
+\*------------------------------------*/
+
+.a-hero {
+    position: relative;
+    width: 100%;
+}
+
+.a-hero__bg-image {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    bottom: -10rem;
+    right: -10rem;
+
+    @include bp(small) {
+        bottom: 0;
+    }
+}
+
+.a-hero__inner {
+    padding-top: 8.5rem;
+    padding-bottom: 12rem;
+    text-align: center;
+    width: 100%;
+
+    @include bp(small) {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+    @include bp(medium) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+}
+
+.a-hero__title {
+    @include bp(medium) {
+        h1 {
+            font-size: var(--f-h1-sm);
+        }
+    }
+}
+.a-hero__title-mask {
+}
+
+.a-hero__content {
+    @include bp(small) {
+        max-width: 45.7rem;
+        margin: auto;
+    }
+    @include bp(medium) {
+        max-width: 73rem;
+        margin: 0;
+    }
+}
+
+.js-fade-in {
+    opacity: 0;
+}
+
+.a-c-l {
+    display: none;
+
+    @include bp(medium) {
+        display: block;
+    }
+}

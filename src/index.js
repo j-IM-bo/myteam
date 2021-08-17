@@ -10,15 +10,17 @@ import "./sass/style.scss";
 import { viewportSize } from "./js/utilities/viewportSize";
 import { initMenu } from "./js/menu";
 import { initHero } from "./js/hero";
+import { initLoadin } from "./js/utilities/loadin";
 import { initFeatures } from "./js/features";
-import { initcarousel } from "./js/testimonials";
+import { initCarousel } from "./js/testimonials";
 
 function init() {
     viewportSize();
+    initLoadin();
     initMenu();
     initHero();
     initFeatures();
-    initcarousel();
+    initCarousel();
 }
 
 window.addEventListener("load", function () {

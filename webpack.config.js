@@ -14,7 +14,9 @@ if (process.env.NODE_ENV === "production") {
 
 module.exports = {
     mode: mode,
-    entry: "./src/index.js",
+    entry: {
+        index: "./src/index.js"
+    },
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, "dist")
@@ -58,16 +60,20 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: "./src/index.html",
-            inject: "body"
+            inject: "body",
+            chunks: ["index"],
+            filename: "index.html"
         }),
         new HtmlWebpackPlugin({
             template: "./src/about.html",
             inject: "body",
+            chunks: ["index"],
             filename: "about.html"
         }),
         new HtmlWebpackPlugin({
             template: "./src/contact.html",
             inject: "body",
+            chunks: ["index"],
             filename: "contact.html"
         })
     ],

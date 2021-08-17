@@ -28,7 +28,7 @@
             [row1-start] "logo address address socials" [row1-end]
             [row1-start] "links address address copywrite" [row1-end];
 
-        padding: 4.8rem 0 0;
+        padding: 4.8rem 3rem 0;
     }
 }
 
@@ -84,7 +84,7 @@
         grid-area: address;
         text-align: right;
     }
-    @include bp(small) {
+    @include bp(medium) {
         text-align: left;
     }
 }
