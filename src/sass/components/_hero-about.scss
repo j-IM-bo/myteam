@@ -38,6 +38,10 @@
 }
 
 .a-hero__title {
+    h1 {
+        transform: translateY(100%);
+    }
+
     @include bp(medium) {
         h1 {
             font-size: var(--f-h1-sm);
@@ -45,6 +49,7 @@
     }
 }
 .a-hero__title-mask {
+    overflow: hidden;
 }
 
 .a-hero__content {
@@ -54,7 +59,7 @@
     }
     @include bp(medium) {
         max-width: 73rem;
-        margin: 0;
+        margin: 2rem 0 0;
     }
 }
 
