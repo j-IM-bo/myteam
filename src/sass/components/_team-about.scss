@@ -44,6 +44,9 @@
     @include bp(small) {
         padding: 9.2rem 9.7rem 12rem;
     }
+    @include bp(medium) {
+        padding: 14.6rem 2.4rem 17rem;
+    }
 }
 
 .a-team__grid {
@@ -64,6 +67,8 @@
 
 .team-card {
     position: relative;
+    transform: translateY(20%);
+    opacity: 0;
 }
 
 .team-card__toggle {
@@ -80,10 +85,20 @@
     justify-content: center;
     z-index: 3;
     cursor: pointer;
+    transition: var(--transition);
 
     img {
         width: 1.6rem;
         height: 1.6rem;
+        transition: var(--transition);
+    }
+
+    .card-active & {
+        background: var(--c-bg-dark-r-b);
+
+        img {
+            transform: rotate(45deg);
+        }
     }
 }
 
@@ -122,7 +137,13 @@
     visibility: hidden;
     transition: var(--transition);
 
-    &.card-active {
+    @include bp(small) {
+        padding: 4rem 2.5rem 0;
+    }
+    @include bp(medium) {
+    }
+
+    .card-active & {
         opacity: 1;
         visibility: visible;
     }

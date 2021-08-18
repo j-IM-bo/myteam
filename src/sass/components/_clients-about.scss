@@ -1,0 +1,113 @@
+/*------------------------------------*\
+    clients sections
+\*------------------------------------*/
+
+.clients {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: var(--c-bg-dark-s-s-g);
+}
+
+.clients__bg-pattern {
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+    width: 20rem;
+    height: 20rem;
+
+    @include bp(small) {
+        left: 0;
+    }
+    @include bp(medium) {
+        top: 0;
+    }
+}
+
+.clients__inner {
+    text-align: center;
+    padding-top: 8.8rem;
+    padding-bottom: 8.8rem;
+
+    h2 {
+        margin-bottom: 5.7rem;
+    }
+
+    @include bp(small) {
+        padding-top: 10.4rem;
+        padding-bottom: 10.4rem;
+    }
+    @include bp(medium) {
+        padding-top: 14.6rem;
+        padding-bottom: 14.6rem;
+    }
+}
+
+.clients__logos {
+    display: flex;
+    flex-direction: column;
+
+    @include bp(small) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.logo {
+    margin: 0 auto 5.7rem;
+
+    &:nth-child(1) {
+        width: 14.6rem;
+    }
+    &:nth-child(2) {
+        width: 16.2rem;
+    }
+    &:nth-child(3) {
+        width: 16rem;
+    }
+    &:nth-child(4) {
+        width: 14.6rem;
+    }
+    &:nth-child(5) {
+        width: 8.7rem;
+    }
+
+    @include bp(small) {
+        margin-bottom: 0;
+
+        &:nth-child(1) {
+            width: 10.3rem;
+        }
+        &:nth-child(2) {
+            width: 14rem;
+        }
+        &:nth-child(3) {
+            width: 11.2rem;
+        }
+        &:nth-child(4) {
+            width: 10.3rem;
+        }
+        &:nth-child(5) {
+            width: 6.1rem;
+        }
+    }
+    @include bp(medium) {
+        margin: 0;
+
+        &:nth-child(1) {
+            width: 16.5rem;
+        }
+        &:nth-child(2) {
+            width: 18.4rem;
+        }
+        &:nth-child(3) {
+            width: 18rem;
+        }
+        &:nth-child(4) {
+            width: 16.5rem;
+        }
+        &:nth-child(5) {
+            width: 9.8rem;
+        }
+    }
+}
