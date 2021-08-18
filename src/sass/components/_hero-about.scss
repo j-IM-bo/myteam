@@ -45,6 +45,7 @@
     @include bp(medium) {
         h1 {
             font-size: var(--f-h1-sm);
+            margin-bottom: 0;
         }
     }
 }

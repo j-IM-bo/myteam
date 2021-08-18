@@ -1,0 +1,145 @@
+/*------------------------------------*\
+    team members section
+\*------------------------------------*/
+
+.a-team {
+    position: relative;
+    width: 100%;
+    background: var(--c-bg-dark-d-j-g);
+    overflow: hidden;
+}
+
+.a-team__bg1 {
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+    width: 20rem;
+    height: 20rem;
+
+    @include bp(small) {
+        top: 0;
+    }
+}
+
+.a-team__bg2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 14.7rem;
+}
+
+.a-team__inner {
+    text-align: center;
+    padding: 9.2rem 2.4rem 12rem;
+
+    h2 {
+        margin-bottom: 5.2rem;
+    }
+
+    h3 {
+        color: var(--c-font-r-b);
+        margin-bottom: 0;
+    }
+
+    @include bp(small) {
+        padding: 9.2rem 9.7rem 12rem;
+    }
+}
+
+.a-team__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 3rem;
+    row-gap: 7.6rem;
+
+    @include bp(small) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.2rem;
+    }
+    @include bp(medium) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+.team-card {
+    position: relative;
+}
+
+.team-card__toggle {
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 5rem;
+    background: var(--c-bg-dark-coral);
+    position: absolute;
+    bottom: -2.8rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    cursor: pointer;
+
+    img {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
+
+.team-card__front {
+    background: var(--c-bg-dark-s-s-g);
+    position: relative;
+
+    p {
+        font-style: italic;
+    }
+}
+.front__inner {
+    padding: 3rem 0 6.3rem;
+}
+.team-card__profile {
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 5rem;
+    border: 1px solid #fff;
+    overflow: hidden;
+    margin: auto auto 1rem;
+}
+
+.team-card__back {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4rem 4.5rem 0;
+    background: var(--c-bg-dark-d-g);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+
+    &.card-active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.team-card__socials {
+    display: flex;
+    margin: 2rem auto 0;
+    .social-icon {
+        margin: 0 1rem;
+
+        svg {
+            path {
+                transition: var(--transition);
+                &:hover {
+                    fill: var(--c-bg-dark-coral);
+                }
+            }
+        }
+    }
+}

@@ -7,9 +7,7 @@ export function initMenu() {
         menuToggle = document.querySelector(".js-menu-btn"),
         menuNav = document.querySelector(".js-menu-nav"),
         stopScrollingClass = "stop-scrolling",
-        isActiveClass = "menu-is-active",
-        menuOpenTl = gsap.timeline({ paused: true }),
-        menuCloseTl = gsap.timeline({ paused: true });
+        isActiveClass = "menu-is-active";
 
     let isActive = false;
 

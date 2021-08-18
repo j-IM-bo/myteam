@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export function initCarousel() {
-    const flkty = new Flickity(".js-carousel", {
+    const flkty = new Flickity(".main-carousel", {
         cellAlign: "center",
         prevNextButtons: false,
         pageDots: true,

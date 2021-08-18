@@ -4,10 +4,6 @@ export function initHero() {
     const line1 = document.querySelector(".hero__title-mask:nth-child(1) div"),
         line2 = document.querySelector(".hero__title-mask:nth-child(2) div");
 
-    gsap.to([line1, line2], {
-        duration: 0.6,
-        autoAlpha: 1,
-        y: 0,
-        stagger: 0.1
-    });
+    gsap.to(line1, { duration: 0.6, autoAlpha: 1, y: 0, stagger: 0.1 });
+    gsap.to(line2, { duration: 0.7, autoAlpha: 1, y: 0, stagger: 0.1 });
 }
