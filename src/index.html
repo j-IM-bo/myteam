@@ -13,28 +13,84 @@
         <meta name="myteam" content="front-end challenge" />
 
         <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#2b5797" />
+        <meta name="theme-color" content="#012f34" />
     </head>
 
     <body class="js-body">
-        <header class="header js-header content-wrapper">
-            <div class="header__inner">
-                <a href="./index.html" class="header__site-link">
-                    <img
-                        src="./images/logo.svg"
-                        aria-label="logo"
-                        alt="Logo"
-                        class="header__site-logo"
-                    />
-                    <span class="visually-hidden">logo</span>
-                </a>
-                <nav class="header__site-nav hidden-mobile">
-                    <div class="header__site-nav-inner">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-list-item">
-                                <a href="./index.html" class="header__nav-link"
+        <main>
+            <header class="header js-header content-wrapper">
+                <div class="header__inner">
+                    <a href="./index.html" class="header__site-link">
+                        <img
+                            src="./images/logo.svg"
+                            aria-label="logo"
+                            alt="Logo"
+                            class="header__site-logo"
+                        />
+                        <span class="visually-hidden">logo</span>
+                    </a>
+                    <nav class="header__site-nav hidden-mobile">
+                        <div class="header__site-nav-inner">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-list-item">
+                                    <a
+                                        href="./index.html"
+                                        class="header__nav-link"
+                                        >home</a
+                                    >
+                                    <a
+                                        href="./about.html"
+                                        class="header__nav-link"
+                                        >about</a
+                                    >
+                                </li>
+                            </ul>
+                            <a href="./contact.html"
+                                ><button class="btn-p-l">contact us</button></a
+                            >
+                        </div>
+                    </nav>
+                </div>
+                <!-- menu button object -->
+                <div class="hidden-t-d">
+                    <button aria-label="menu" class="menu-button js-menu-btn">
+                        <span class="x"></span>
+                        <span class="y"></span>
+                        <span class="z"></span>
+                        <span class="visually-hidden">Menu</span>
+                    </button>
+                </div>
+
+                <!-- menu component -->
+                <div class="menu__overlay js-overlay"></div>
+                <div class="menu js-menu hidden-t-d">
+                    <nav class="menu__nav js-menu-nav">
+                        <ul class="menu__list">
+                            <li class="menu__list-item js-menu-item">
+                                <a href="./index.html" class="menu__link"
                                     >home</a
                                 >
-                                <a href="./about.html" class="header__nav-link"
+                                <a href="./about.html" class="menu__link"
                                     >about</a
                                 >
                             </li>
@@ -42,42 +98,15 @@
                         <a href="./contact.html"
                             ><button class="btn-p-l">contact us</button></a
                         >
-                    </div>
-                </nav>
-            </div>
-            <!-- menu button object -->
-            <div class="hidden-t-d">
-                <button aria-label="menu" class="menu-button js-menu-btn">
-                    <span class="x"></span>
-                    <span class="y"></span>
-                    <span class="z"></span>
-                    <span class="visually-hidden">Menu</span>
-                </button>
-            </div>
+                    </nav>
+                    <img
+                        src="./images/bg-pattern-about-1-mobile-nav-1.svg"
+                        alt="background pattern"
+                    />
+                </div>
+                <!-- /end .menu-->
+            </header>
 
-            <!-- menu component -->
-            <div class="menu__overlay js-overlay"></div>
-            <div class="menu js-menu hidden-t-d">
-                <nav class="menu__nav js-menu-nav">
-                    <ul class="menu__list">
-                        <li class="menu__list-item js-menu-item">
-                            <a href="./index.html" class="menu__link">home</a>
-                            <a href="./about.html" class="menu__link">about</a>
-                        </li>
-                    </ul>
-                    <a href="./contact.html"
-                        ><button class="btn-p-l">contact us</button></a
-                    >
-                </nav>
-                <img
-                    src="./images/bg-pattern-about-1-mobile-nav-1.svg"
-                    alt="background pattern"
-                />
-            </div>
-            <!-- /end .menu-->
-        </header>
-
-        <main>
             <!-- hero section -->
             <section class="hero">
                 <div class="bg-pattern1">

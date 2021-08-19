@@ -29,7 +29,7 @@
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -100%;
     background: var(--c-bg-dark-p-b);
     width: 68%;
     height: 100vh;
@@ -38,7 +38,6 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    transform: translateX(100%);
     transition: all 0.3s ease-in-out;
 
     img {
@@ -50,7 +49,7 @@
     }
 
     &.menu-is-active {
-        transform: translateX(0);
+        right: 0;
     }
 
     @include bp(small) {

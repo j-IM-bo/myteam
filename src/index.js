@@ -3,25 +3,24 @@ import "./sass/style.scss";
 
 //js
 import { gsap, Power1, Power2, Power3, Power4 } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
-// import Flickity from "flickity";
-// import { debounce } from "./js/utilities/debounce";
+
 import { initMenu } from "./js/menu";
 import { initHeroGlobal } from "./js/utilities/loadin";
 import { initHero } from "./js/hero";
 import { initFeatures } from "./js/features";
 import { initCarousel } from "./js/testimonials";
 import { initTeamCards } from "./js/team";
+import { initForm } from "./js/form";
 
 gsap.config({
     nullTargetWarn: false
 });
 
 // global variables
-const heroTitle = document.querySelectorAll(".js-hero-title");
-const carousel = document.getElementById("js-carousel");
-const team = document.querySelector(".js-team");
+const heroTitle = document.querySelectorAll(".js-hero-title"),
+    carousel = document.getElementById("js-carousel"),
+    team = document.querySelector(".js-team"),
+    form = document.querySelector("#js-form");
 
 function init() {
     initMenu();
@@ -38,6 +37,10 @@ function init() {
     }
 
     initTeamCards();
+
+    if (typeof form != "undefined" && form != null) {
+        initForm();
+    }
 }
 
 window.addEventListener("load", function () {

@@ -2,9 +2,25 @@
     Footer 
 \*------------------------------------*/
 
+main {
+    margin-bottom: 46.5rem;
+    z-index: 3;
+
+    @include bp(small) {
+        margin-bottom: 30.7rem;
+    }
+    @include bp(medium) {
+        margin-bottom: 20.5rem;
+    }
+}
+
 .footer {
     width: 100%;
     background: var(--c-bg-dark-d-g);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .footer__inner {

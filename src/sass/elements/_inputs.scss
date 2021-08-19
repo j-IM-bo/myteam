@@ -2,7 +2,8 @@
    Inputs
 \*------------------------------------*/
 
-input {
+input,
+textarea {
     position: relative;
     display: block;
     border: none;
@@ -13,4 +14,11 @@ input {
     &:focus {
         outline: none;
     }
+}
+
+/* Disable autofill highlighting */
+input:-webkit-autofill {
+    -webkit-text-fill-color: #fff !important;
+    -webkit-box-shadow: 0 0 0 1rem var(--c-bg-dark-m-g) inset !important;
+    background-clip: content-box !important;
 }

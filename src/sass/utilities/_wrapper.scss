@@ -12,10 +12,6 @@
     max-width: 120rem;
     margin: 0 auto;
     padding: var(--col-pd-wrapper);
-
-    @include bp(small) {
-        padding: var(--col-pd-wrapper-small);
-    }
 }
 
 .content-inner {
