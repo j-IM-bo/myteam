@@ -19,6 +19,5 @@ textarea {
 /* Disable autofill highlighting */
 input:-webkit-autofill {
     -webkit-text-fill-color: #fff !important;
-    -webkit-box-shadow: 0 0 0 0 var(--c-bg-dark-m-g) inset !important;
-    background-clip: content-box !important;
+    background: transparent;
 }
