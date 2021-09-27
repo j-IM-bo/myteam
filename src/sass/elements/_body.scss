@@ -6,7 +6,7 @@ body {
     @include f-reg();
     background-color: var(--c-bg-dark-m-g);
     color: var(--c-font-light);
-    overflow: hidden;
+    overflow-x: hidden;
 
     &.stop-scrolling {
         position: absolute;

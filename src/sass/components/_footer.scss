@@ -5,6 +5,7 @@
 main {
     margin-bottom: 46.5rem;
     z-index: 3;
+    overflow-x: hidden;
 
     @include bp(small) {
         margin-bottom: 30.7rem;
